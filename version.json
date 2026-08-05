@@ -1,0 +1,7 @@
+{
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "apkUrl": "https://github.com/harrisalexandre/apk/raw/main/karate-santiago-erp.apk",
+  "required": false,
+  "notes": "Versão inicial com verificação automática de atualizações."
+}
