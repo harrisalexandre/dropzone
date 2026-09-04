@@ -1,45 +1,44 @@
-# Karate Santiago — APK
+# Espaço de Transferência
 
-Repositório de distribuição do aplicativo Android do Karate Santiago ERP.
+Repositório utilizado como espaço temporário para transferência de arquivos entre ambientes, máquinas e projetos.
 
-## Arquivos públicos
+## Objetivo
 
-- `karate-santiago-erp.apk` — versão Android atualmente publicada.
-- `version.json` — manifesto consultado pelo aplicativo para detectar atualizações.
+Este repositório não representa um projeto de produção.
 
-## Origem
+É utilizado apenas para:
 
-O código-fonte e o build ficam em `harrisalexandre/karate-santiago-erp`, branch `main-react`.
+- Transferência de arquivos;
+- Compartilhamento temporário;
+- Testes;
+- Upload/download de artefatos;
+- Apoio durante desenvolvimento.
 
-O ERP possui o workflow manual `Build Android APK`, que gera um candidato contendo:
+## Estrutura
 
-- `karate-santiago-erp.apk`
-- `version.json`
+Os arquivos podem ser adicionados conforme a necessidade.
 
-O candidato deve ser validado antes de substituir os arquivos deste repositório.
+Não há estrutura fixa ou padrão de aplicação.
 
-## Regra de versão
+## Importante
 
-Toda publicação precisa aumentar `versionCode`.
+Este repositório **não deve ser utilizado para armazenar informações sensíveis**, como:
 
-Exemplo:
+- Senhas;
+- Tokens;
+- Chaves de API;
+- Credenciais;
+- Dados pessoais;
+- Secrets de produção.
 
-```json
-{
-  "versionCode": 2,
-  "versionName": "1.0.1",
-  "apkUrl": "https://github.com/harrisalexandre/apk/raw/main/karate-santiago-erp.apk",
-  "required": false,
-  "notes": "Karate Santiago 1.0.1"
-}
-```
+Arquivos enviados aqui devem ser considerados temporários.
 
-`required: true` bloqueia a opção de adiar a atualização no aplicativo.
+## Limpeza
 
-## Fluxo
+O conteúdo pode ser removido ou substituído a qualquer momento.
 
-1. Preparar a versão no ERP.
-2. Executar/buildar o APK.
-3. Testar o candidato.
-4. Publicar APK e `version.json` neste repositório.
-5. Instalações Android com `versionCode` menor passam a receber o aviso de atualização.
+O repositório funciona como uma área de transferência, não como armazenamento permanente.
+
+---
+
+**Uso interno — espaço temporário de transferência.**
